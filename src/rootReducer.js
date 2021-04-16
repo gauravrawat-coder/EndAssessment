@@ -1,6 +1,7 @@
 import {combineReducers} from 'redux';
-import Content from './Services/Home/reducer';
+import {Note, Auth} from './Services';
 
 export default combineReducers({
-  home: Content,
+  note: Note,
+  auth: Auth,
 });

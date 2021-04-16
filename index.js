@@ -5,7 +5,7 @@
 import 'react-native-gesture-handler';
 
 import {AppRegistry} from 'react-native';
-import Home from './src/Components/Home';
+import {Navigation} from './src/Components';
 import {name as appName} from './app.json';
 
 import RootReducer from './src/rootReducer';
@@ -23,7 +23,7 @@ export const store = createStore(
 
 const ReduxApp = () => (
   <Provider store={store}>
-    <Home />
+    <Navigation />
   </Provider>
 );
 

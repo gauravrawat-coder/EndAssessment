@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ReduxProject</string>
+    <string name="facebook_app_id">3915896531832278</string>
+    <string name="fb_login_protocol_scheme">fb3915896531832278</string>
 </resources>

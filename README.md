@@ -1,15 +1,21 @@
 <div style="text-align:center">
-<p>Create a Listing screen with add icon on top right. </p>
-
-<p>Each List will have edit and delete icon use the respective API's.</p>
-
-<p>All API's need to implemented through redux</p>
+<p>React Native Assessment 16-April-2021</p>
 </div>
 
 <p  style="text-align:center">IOS</p>
 
-![ios](./Screenshots/iphone.gif)
+![ios](./Screenshots/ios/ios.gif)
 
-<p  style="text-align:center">Android</p>
+<p  style="text-align:center;margin:10;">Android</p>
 
-![ios](./Screenshots/android.gif)
+![android](./Screenshots/android/signup.png)
+
+![android](./Screenshots/android/login.png)
+
+![android](./Screenshots/android/note.png)
+
+![android](./Screenshots/android/note_dark.png)
+
+![android](./Screenshots/android/add_note.png)
+
+![android](./Screenshots/android/add_notedark.png)
