@@ -25,10 +25,9 @@ export const registerUser = (data) => async (dispatch) => {
     body: JSON.stringify(receievedData),
   });
   const JSONResponse = await response.json();
-
   if (JSONResponse.status) {
-    await AsyncStorage.setItem('loginID', JSONResponse.id);
-    dispatch({type: LOGIN_SUCCESS, data: JSONResponse});
+    await AsyncStorage.setItem('loginID', JSONResponse.body.id);
+    dispatch({type: LOGIN_SUCCESS, data: JSONResponse.body});
     return true;
   }
   return false;

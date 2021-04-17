@@ -76,6 +76,7 @@ export const getData = () => async (dispatch, getState) => {
     type: GET_DATA,
     payload: newData,
   });
+  return true;
 };
 
 export const filteredNote = (key) => async (dispatch, getState) => {
@@ -116,7 +117,7 @@ export const findLatest = () => async (dispatch, getState) => {
   var mostRecentObject = data.filter((e) => {
     var d = new Date(e.createdDate);
     return d.getTime() === mostRecentDate.getTime();
-  })[0];
-
-  dispatch({type: LATEST_NOTE, payload: mostRecentObject.title});
+  });
+  mostRecentObject.length > 0 &&
+    dispatch({type: LATEST_NOTE, payload: mostRecentObject[0].title});
 };
